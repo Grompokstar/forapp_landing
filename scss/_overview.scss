@@ -1,0 +1,23 @@
+#overview {
+  border-bottom: 1px solid $border-color;
+  background: url(../images/Iphone2.png) right 35px no-repeat,
+              url(../images/Iphone1.png) 79% 280px no-repeat;
+
+  .overview-header {
+    margin-top: 200px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  .overview-subtitle {
+    opacity: 0.4;
+    margin-bottom: 40px;
+  }
+
+  .overview-button {
+    padding: 10px 40px;
+    margin-bottom: 260px;
+  }
+}

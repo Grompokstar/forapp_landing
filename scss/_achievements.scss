@@ -1,0 +1,43 @@
+@import "variables";
+
+#achievements {
+  background: #333 url(../images/back.png) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 400px;
+  padding: 70px 0;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+
+  .achievement {
+    margin-bottom: 30px;
+    .count {
+      font-size: 48px;
+      font-weight: 900;
+    }
+
+    .count-subtext {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .text {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .achievement {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+}

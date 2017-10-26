@@ -1,0 +1,106 @@
+@import "variables";
+
+#license {
+  background-color: #fff;
+  padding: 86px 0 134px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  .licence-container {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .license-item {
+      width: 360px;
+      height: 498px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin: 15px;
+
+      hr {
+        margin: 10px 0;
+      }
+
+      .subtitle {
+        color: $brand-color;
+        margin-bottom: 14px;
+      }
+
+      .title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 6px;
+      }
+
+      .license-count {
+        font-size: 12px;
+        opacity: 0.4;
+      }
+
+      .license-list {
+        padding-left: 18px;
+
+        .license-list-item {
+          font-size: 12px;
+          margin-bottom: 7px;
+
+          &:before {
+            content: '';
+            display: block;
+            position: relative;
+            top: 12px;
+            left: -18px;
+            width: 6px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .bottom-row {
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn-license-primary {
+        background-color: #fff;
+        border: solid 2px #cfcfcf;
+        color: #cfcfcf;
+        width: 230px;
+        padding: 10px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        .btn-license-primary {
+          background-color: $brand-color;
+          border: solid 2px $brand-color;
+          color: #fff;
+
+          &:hover {
+            background-color: $brand-color-hover;
+            border: solid 2px $brand-color-hover;
+          }
+        }
+      }
+    }
+  }
+}

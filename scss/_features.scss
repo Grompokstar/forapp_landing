@@ -1,0 +1,28 @@
+@import "variables";
+
+#features {
+  background-color: $bg-color-secondary;
+  padding: 100px 0 146px;
+
+  .forapp-feature {
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 27px;
+    }
+
+    p {
+      opacity: 0.4;
+    }
+
+    .feature-icon {
+      height: 180px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}

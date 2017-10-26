@@ -1,0 +1,47 @@
+@import "variables";
+
+#feedbacks {
+  padding: 84px 0;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .feedback {
+    padding-right: 65px;
+    margin-bottom: 50px;
+
+    .quote {
+      margin-bottom: 30px;
+    }
+
+    .text {
+      margin-bottom: 15px;
+    }
+
+    .author {
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+    }
+
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+
+  .btn-primary-inverse {
+    width: 270px;
+  }
+
+}

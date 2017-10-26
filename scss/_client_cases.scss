@@ -1,0 +1,155 @@
+@import "variables";
+
+#client-cases {
+  background-color: #fff;
+  padding: 85px 0 110px;
+  border-top: 1px solid $border-color;
+
+  &.open {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border-top: none;
+
+    .case-item {
+      height: auto;
+      background-color: #fff;
+
+      .case-text {
+        height: auto;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .slider {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .case-item {
+    margin: 15px;
+    height: 486px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+    cursor: move;
+
+    .case-top {
+      height: 200px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &.case-1 {
+        background: url(../images/img1.png);
+      }
+
+      &.case-2 {
+        background: url(../images/img2.png);
+      }
+
+      &.case-3 {
+        background: url(../images/img3.png);
+      }
+
+      &.case-4 {
+        background: url(../images/img4.png);
+      }
+
+      &.case-5 {
+        background: url(../images/img5.png);
+      }
+
+      &.case-6 {
+        background: url(../images/img6.png);
+      }
+
+      &.case-7 {
+        background: url(../images/img7.png);
+      }
+
+      &.case-8 {
+        background: url(../images/img8.png);
+      }
+
+      &.case-9 {
+        background: url(../images/img9.png);
+      }
+
+      &.case-10 {
+        background: url(../images/img10.png);
+      }
+
+      &.case-11 {
+        background: url(../images/img11.png);
+      }
+
+      &.case-12 {
+        background: url(../images/img12.png);
+      }
+
+      &.case-13 {
+        background: url(../images/img13.png);
+      }
+
+      &.case-14 {
+        background: url(../images/img14.png);
+      }
+    }
+
+    .case-logo {
+      position: relative;
+    }
+
+    .case-bottom {
+      padding: 30px;
+      position: relative;
+    }
+
+    .case-header {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 23px;
+      height: 36px;
+      overflow: hidden;
+    }
+
+    .case-text {
+      height: 144px;
+      overflow: hidden;
+    }
+
+    .btn-transparent {
+      padding: 10px 0;
+    }
+  }
+}
+
+#overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}

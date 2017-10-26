@@ -1,0 +1,23 @@
+#try-it-modal {
+  font-size: 14px;
+  font-weight: 400;
+
+  .modal-header {
+    h4 {
+      font-weight: 200;
+      font-size: 18px;
+    }
+
+    .close {
+      cursor: pointer;
+      float: right;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .2;
+    }
+  }
+
+}

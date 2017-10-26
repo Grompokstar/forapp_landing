@@ -1,0 +1,58 @@
+header {
+  font-size: 14px;
+  height: 80px;
+
+  .navbar {
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .navbar-collapse {
+    flex-basis: auto;
+  }
+
+  .forapp-navbar-phone {
+    margin: 0 40px;
+    border-bottom: 1px dashed $brand-color;
+
+    &:hover {
+      border: none;
+    }
+
+    a {
+      color: $brand-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+
+  }
+
+  .navbar-nav {
+    height: 100%;
+
+    .nav-item {
+      height: 100%;
+      margin-left: 20px;
+    }
+  }
+
+  .navbar-button {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .btn {
+      display: none;
+    }
+  }
+}

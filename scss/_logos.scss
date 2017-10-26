@@ -1,0 +1,32 @@
+#logos {
+  height: 146px;
+  background-color: #fff;
+
+  .logo-slider {
+    cursor: move;
+  }
+
+  .logo-item {
+    position: relative;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+
+    img {
+      max-width: 100%;
+      max-height: 60%;
+    }
+
+    .white-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+}
