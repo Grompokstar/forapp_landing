@@ -5,7 +5,10 @@ $(function(){
     var $toggleOverlayBtns = $('.toggle-overlay'),
         $clientCases = $('#client-cases'),
         $overlay = $('#overlay'),
-        $caseItems = $('.case-item');
+        $caseItems = $('.case-item'),
+        $controlCircles = $('.control-circle'),
+        $imgContainers = $('.img-container'),
+        $benefits = $('.benefit');
 
 
     $("a[href^='#']").click(function(){
@@ -92,6 +95,32 @@ $(function(){
       $clientCases.removeClass('open');
       $overlay.removeClass('show');
     });
+
+
+    $controlCircles.on('click', function() {
+      var key = $(this).attr('data-key');
+
+      $controlCircles.removeClass('current');
+      $(this).addClass('current');
+
+      $imgContainers.each(function() {
+        if ($(this).attr('data-key') === key) {
+          $(this).addClass('current')
+        } else {
+          $(this).removeClass('current');
+        }
+
+      });
+
+      $benefits.each(function() {
+        if ($(this).attr('data-key') === key) {
+          $(this).addClass('current')
+        } else {
+          $(this).removeClass('current');
+        }
+
+      })
+    })
 
   });
 
