@@ -765,7 +765,7 @@ footer {
       background-color: #f3f4f5;
       display: flex; }
       #how-it-works .forapp-step-panel .content-types img {
-        padding: 0 10px;
+        padding: 10px;
         cursor: pointer; }
         #how-it-works .forapp-step-panel .content-types img:hover {
           background-color: #e5e7e9; }
@@ -940,7 +940,7 @@ footer {
     #benefits .half-screen-img {
       width: 100%; }
     #benefits .benefit {
-      background-color: rgba(255, 255, 255, 0.8); } }
+      background-color: rgba(255, 255, 255, 0.79); } }
 
 /* FONT */
 /* COLORS */

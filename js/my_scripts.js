@@ -120,7 +120,60 @@ $(function(){
         }
 
       })
-    })
+    });
+
+    var $form = $('.wpcf7-form');
+    var $done_block = $('#done-block');
+
+    console.log($form);
+    console.log($done_block);
+
+    var $submit = $('input[type="submit"]');
+    var $agreement = $('input[type="checkbox"].agreement');
+
+    $form.show();
+    $done_block.hide();
+    $('#name-required').hide();
+    $('#surname-required').hide();
+    $('#phone-required').hide();
+    $('#email-required').hide();
+    $('#position-required').hide();
+    $('#company-required').hide();
+
+    $submit.prop('disabled', true);
+
+    $agreement.on('change', function(e) {
+        $submit.prop('disabled', !$agreement.prop('checked'));
+    });
+
+    $('#try-it-modal').on('shown.bs.modal', function () {
+        $('#name').focus();
+    });
+
+
+    $('#try-it-modal').on('hidden.bs.modal', function () {
+        $('#name').val('');
+        $('#phone').val('');
+        $('#email').val('');
+        $('#comment').val('');
+
+        $form.show();
+        $done_block.hide();
+
+        $('#name-required').hide();
+        $('#phone-required').hide();
+        $('#email-required').hide();
+    });
+
+    $form.on('wpcf7submit', function() {
+        console.log('SUBMIT!');
+        $form.hide();
+        $done_block.show();
+    });
+
+    $('#done').click(function() {
+        $('#try-it-modal').modal('hide');
+    });
 
   });
 
