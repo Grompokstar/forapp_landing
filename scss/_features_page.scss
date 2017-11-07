@@ -1,0 +1,54 @@
+#all-features {
+  background-color: #fff;
+  padding-bottom: 60px;
+
+  h1 {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: 100;
+  }
+
+  h2 {
+    margin-top: 56px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  table {
+    td {
+      vertical-align: top;
+      padding-bottom: 20px;
+      font-size: 14px;
+
+      svg {
+        margin-top: 1px;
+      }
+
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+#questions {
+  padding: 80px 0;
+
+  h6 {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+  }
+
+  button {
+    padding: 12px 40px;
+  }
+}

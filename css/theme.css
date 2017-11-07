@@ -1066,6 +1066,41 @@ footer {
     text-shadow: 0 1px 0 #fff;
     opacity: .2; }
 
+#all-features {
+  background-color: #fff;
+  padding-bottom: 60px; }
+  #all-features h1 {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: 100; }
+  #all-features h2 {
+    margin-top: 56px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 100; }
+  #all-features table td {
+    vertical-align: top;
+    padding-bottom: 20px;
+    font-size: 14px; }
+    #all-features table td svg {
+      margin-top: 1px; }
+    #all-features table td:last-child {
+      padding-left: 30px; }
+
+#questions {
+  padding: 80px 0; }
+  #questions h6 {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 30px; }
+  #questions p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 50px; }
+  #questions button {
+    padding: 12px 40px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
