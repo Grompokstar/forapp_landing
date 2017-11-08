@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/my_scripts.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-2" href="/">
+            <svg width="111pt" height="86pt" viewBox="0 0 111 86" version="1.1" xmlns="http://www.w3.org/2000/svg" style="width: 58px; height: 45px;">
+                <path fill="#ffffff" d=" M 0.00 0.00 L 20.39 0.00 C 13.88 1.05 10.33 9.31 14.19 14.69 C 17.51 20.19 26.42 20.13 29.65 14.57 C 33.35 9.22 29.92 1.25 23.59 0.00 L 52.34 0.00 C 45.67 0.93 42.08 9.48 46.15 14.86 C 49.53 20.22 58.29 20.05 61.48 14.58 C 65.19 9.23 61.75 1.26 55.43 0.00 L 84.20 0.00 C 77.46 0.90 73.90 9.56 78.03 14.93 C 81.48 20.28 90.31 20.00 93.40 14.42 C 96.98 9.08 93.53 1.33 87.34 0.00 L 111.00 0.00 L 111.00 82.94 C 110.07 75.08 106.08 67.79 100.19 62.54 C 104.64 58.27 107.63 52.19 106.97 45.90 C 106.47 37.34 100.48 29.25 92.11 26.92 C 84.35 24.49 75.72 27.10 69.97 32.68 C 66.13 29.19 61.38 26.51 56.12 26.14 C 49.51 25.43 42.83 28.08 38.18 32.76 C 32.46 27.07 23.74 24.49 15.95 26.96 C 7.27 29.44 0.91 37.60 0.00 46.50 L 0.00 0.00 Z"></path>
+                <path fill="#0081dd" d=" M 20.39 0.00 L 23.59 0.00 C 29.92 1.25 33.35 9.22 29.65 14.57 C 26.42 20.13 17.51 20.19 14.19 14.69 C 10.33 9.31 13.88 1.05 20.39 0.00 Z"></path>
+                <path fill="#073496" d=" M 52.34 0.00 L 55.43 0.00 C 61.75 1.26 65.19 9.23 61.48 14.58 C 58.29 20.05 49.53 20.22 46.15 14.86 C 42.08 9.48 45.67 0.93 52.34 0.00 Z"></path>
+                <path fill="#073496" d=" M 84.20 0.00 L 87.34 0.00 C 93.53 1.33 96.98 9.08 93.40 14.42 C 90.31 20.00 81.48 20.28 78.03 14.93 C 73.90 9.56 77.46 0.90 84.20 0.00 Z"></path>
+                <path fill="#073496" d=" M 15.95 26.96 C 23.74 24.49 32.46 27.07 38.18 32.76 C 34.44 36.70 32.34 41.90 31.66 47.25 C 30.95 40.79 22.92 36.61 17.40 40.33 C 12.47 43.03 12.34 49.13 12.61 54.05 C 17.47 54.06 22.33 54.06 27.19 54.06 C 27.19 58.37 27.19 62.68 27.18 67.00 C 22.33 67.00 17.48 67.00 12.63 67.00 C 12.63 73.06 12.62 79.11 12.63 85.17 C 8.42 85.19 4.21 85.20 0.00 85.18 L 0.00 46.50 C 0.91 37.60 7.27 29.44 15.95 26.96 Z"></path>
+                <path fill="#0081dd" d=" M 38.18 32.76 C 42.83 28.08 49.51 25.43 56.12 26.14 C 61.38 26.51 66.13 29.19 69.97 32.68 C 75.72 27.10 84.35 24.49 92.11 26.92 C 100.48 29.25 106.47 37.34 106.97 45.90 C 107.63 52.19 104.64 58.27 100.19 62.54 C 106.08 67.79 110.07 75.08 111.00 82.94 L 111.00 85.50 C 106.85 85.49 102.70 85.50 98.54 85.52 C 97.87 76.72 90.65 68.42 81.51 68.24 C 81.49 63.91 81.47 59.58 81.56 55.26 C 85.25 55.03 89.45 54.99 92.27 52.21 C 96.37 48.39 93.81 40.59 88.52 39.34 C 83.32 37.62 77.09 41.56 76.64 47.05 C 76.06 55.02 77.54 63.26 75.01 71.01 C 72.29 79.06 64.71 85.02 56.29 86.00 L 52.28 86.00 C 42.63 85.24 34.11 77.60 32.31 68.10 C 31.12 61.22 31.79 54.20 31.66 47.25 C 32.34 41.90 34.44 36.70 38.18 32.76 Z"></path>
+                <path fill="#ffffff" d=" M 17.40 40.33 C 22.92 36.61 30.95 40.79 31.66 47.25 C 31.79 54.20 31.12 61.22 32.31 68.10 C 34.11 77.60 42.63 85.24 52.28 86.00 L 0.00 86.00 L 0.00 85.18 C 4.21 85.20 8.42 85.19 12.63 85.17 C 12.62 79.11 12.63 73.06 12.63 67.00 C 17.48 67.00 22.33 67.00 27.18 67.00 C 27.19 62.68 27.19 58.37 27.19 54.06 C 22.33 54.06 17.47 54.06 12.61 54.05 C 12.34 49.13 12.47 43.03 17.40 40.33 Z"></path>
+                <path fill="#ffffff" d=" M 52.09 39.16 C 56.84 38.01 62.06 41.32 63.19 46.03 C 63.68 50.68 63.22 55.37 63.41 60.03 C 63.40 62.32 63.87 64.73 62.95 66.92 C 61.45 70.84 57.21 73.61 52.99 73.05 C 48.23 72.54 44.13 67.94 44.67 63.08 C 44.95 58.04 44.69 52.99 44.79 47.95 C 44.58 43.73 48.13 40.05 52.09 39.16 Z"></path>
+                <path fill="#ffffff" d=" M 76.64 47.05 C 77.09 41.56 83.32 37.62 88.52 39.34 C 93.81 40.59 96.37 48.39 92.27 52.21 C 89.45 54.99 85.25 55.03 81.56 55.26 C 81.47 59.58 81.49 63.91 81.51 68.24 C 90.65 68.42 97.87 76.72 98.54 85.52 C 102.70 85.50 106.85 85.49 111.00 85.50 L 111.00 86.00 L 56.29 86.00 C 64.71 85.02 72.29 79.06 75.01 71.01 C 77.54 63.26 76.06 55.02 76.64 47.05 Z"></path>
+            </svg>
+        </a>
+        <div class="ml-auto">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#how-it-works">Как это работает</a>
+                <a class="nav-item nav-link" href="#client-cases">Кейсы клиентов</a>
+                <a class="nav-item nav-link" href="#feedbacks">Отзывы</a>
+                <a class="nav-item nav-link" href="#license">Лицензии</a>
+            </div>
+        </div>
+        <div class="forapp-navbar-phone">
+            <a href="tel:+74956986397" class="forapp-tel-hidden-xs">+7 495 698 63 97</a>
+        </div>
+        <button type="button" data-toggle="modal" data-target="#try-it-modal" class="btn btn-primary navbar-button">Связаться с нами</button>
+    </nav>
+</header>
+
+<div id="all-feedbacks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Отзывы и кейсы</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2 class="text-center">Маркетинговые агенства</h2>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Опытный "тайный покупатель" берет с собой в разведку FORapp </h3>
+                    <p class="one-feature">Когда перед агентством встала задача аудита розничной аптечной сети методом “тайного покупателя”, важно было не только собрать точные и достоверные данные (аудиозапись разговора покупателя с продавцом, фотографии торговой точки, заполненные анкеты), но и устроить этим данным двойную проверку – команда верификаторов проверяла собранную информацию на сайте и отражала в кабинете клиента только полностью подтвержденную информацию. </p>
+                    <p class="one-feature">С решением FORapp специалисты нашего агентства смогли самостоятельно настроить подходящие под задачу анкеты, собрать точную и достоверную информацию по проекту и предоставить клиенту данные самого высокого качества! </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>Возможность настройки собственных сценариев, встроенная аналитика и отчетность, отличная команда поддержки – с платформой FORapp мы гарантируем самое высокое качество данных, предоставляемых нашим клиентам.<span class="forapp-end-quote">»</span></div>
+                    <table>
+                        <tr>
+                            <!-- td-->
+                            <!--   img(src='/wp-content/uploads/2017/05/feedback-photo-amway.png', width='58px')-->
+                            <td class="forapp-feedback-name no-padding">Старший менеджер по работе с ключевыми клиентами<br/>Европейская трейд-маркетинг группа</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>Использование FORapp помогает нашему подрядчику качественно вести регулярный мониторинг цен, а также снизить издержки и цену проекта без потери качества.<span class="forapp-end-quote">»</span></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Leading Market Research Company</h3>
+                    <p class="one-feature">Ведущая американская социологическая маркетинговая компания, мировой лидер в области маркетинговых исследований, представленная более чем в 100 странах, выбрала подрядчика, работающего на платформе FORapp для управления полевыми агентами, осуществляющими ценовой мониторинг в сетях гипермаркетов в России.</p>
+                    <p class="one-feature">В результате сотрудничества компания регулярно получает достоверные данные, которые легко проверить. А интеграция FORapp с внутренними ИТ-системами позволяет значительно снизить стоимость всего цикла работы.</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Краудсорсинг-платформа millionagents</h3>
+                    <p class="one-feature">millionagents – краудсорсинг-платформа, с которой началось развитие технологии FORapp. Благодаря наработкам в области вовлечения и управления неограниченным кругом исполнителей (краудсорсинг), технология FORapp с самого начала получила несколько важных качеств:</p>
+                    <p class="one-feature">Получив бесценный опыт эксплуатации собственного ПО, мы можем предлагать его рынку с полной уверенностью в эффективности работы с ним. </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>Технология FORapp создана на основе наработок и двухлетнего опыта эксплуатации краудсорсинг-платформы millionagents. Десятки тысяч исполнителей с личными мобильными устройствами выполняют полевые проекты для клиентов. Накопив такой опыт, мы переработали технологию заново и выделили ее развитие и продажу в отдельный бизнес - FORapp<span class="forapp-end-quote">»</span></div>
+                    <table>
+                        <tr>
+                            <td><img src="/wp-content/uploads/2017/11/kalinin.png" width="58px"/></td>
+                            <td class="forapp-feedback-name">Павел Калинин<br/>Генеральный директор, millionagents.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2 class="text-center">Ритейловые сети</h2>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>ООО "Игристые вина"</h3>
+                    <p class="one-feature">Компания “Игристые вина” – старейшее предприятие по производству игристых вин, основанное в 1874 году. Продукция компании представлена, в частности, во всех магазинах торговых сетей “Перекресток” и “Магнит” в 379 городах России. Аудит качества выкладки и соблюдения рекомендованных розничных цен в каждой торговой точке – важная задача, требующая точной и надежной технологии. Для реализации этой задачи компания привлекла подрядчиков, которые отчитываются и контролируются с помощью технологии FORapp.</p>
+                    <p class="one-feature">Результат – ежедневная, полная и достоверная картина наличия продукции во всех магазинах. Это помогает руководству отслеживать четкую связь между наличием, ценой и ассортиментом товара на полках и результатами продаж, а также оценивать эффективность сотрудничества с торговыми сетями и исполнение обязательств по договорам с ними.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>С технологией FORapp мы получили возможность оперативного контроля подрядчика, обеспечивающего наличие наших вин в розничных сетях в 350+ городах России. Используя этот инструмент, мы контролируем качество выкладки нашей продукции, не отвлекаемся на отдельные проверки и можем сосредоточиться на главном – стратегии продаж.<span class="forapp-end-quote">»</span></div>
+                    <table>
+                        <tr>
+                            <!-- td-->
+                            <!--   img(src='/wp-content/uploads/2017/05/feedback-photo-amway.png', width='58px')-->
+                            <td class="forapp-feedback-name no-padding">Андрей Стратьев<br/>Генеральный директор ООО "Игристые вина"</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>Внедрение розничного аудита с помощью мобильной платформы FORapp позволило в режиме реального времени контролировать cтандарты мерчендайзинга, отслеживать стоки на полках и что важно – замотивировать персонал на результат!<span class="forapp-end-quote">»</span></div>
+                    <table>
+                        <tr>
+                            <td><img src="wp-content/uploads/2017/11/kogut.png" width="58px"/></td>
+                            <td class="forapp-feedback-name">Ирина Когут<br/>Ведущий специалист по торговому маркетингу Amway</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Контроль высоких стандартов мерчендайзинга в сети Amway</h3>
+                    <p class="one-feature">После разработки стандартов мерчендайзинга для 16 торговых центров (ТЦ) Амвэй в России, перед компанией встала задача объективного и четкого контроля их соблюдения. Средством был выбран внутренний аудит сотрудников, а также формирование рейтингов ТЦ.</p>
+                    <p class="one-feature">По результатам внедрения решения FORapp в каждом из городов торговой сети уже заметны прогрессивные улучшения: сотрудники Amway отслеживают динамику изменения результатов в ТЦ, своевременно получают отчёты по аудиту в удобной форме, а также достоверные фотоотчёты. Очень важно и то, что сотрудники торговых точек сами с интересом вовлекаются в процесс и активнее работают на общий результат, так как видят, как их работа влияет на улучшение работы всего ТЦ.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2 class="text-center">Заказная разработка</h2>
+            </div>
+        </div>
+        <div class="feature-with-feedback">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>DaOffice</h3>
+                    <p class="one-feature">Daoffice – разработчик программного обеспечения для социализации бизнеса. Это новый способ совместной работы для современной организации, основанный на опыте использования социальных сетей и других инструментов ежедневного обмена информацией в нерабочее время.</p>
+                    <p class="one-feature">Продукты компании – Корпоративная социальная сеть и "Мобильный интранет". И все мобильные приложения, являющиеся основой этих продуктов, компания Daoffice поручила разрабатывать нашему коллективу.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="forapp-feedback"><span class="forapp-start-quote">«</span>Заказывали разработку мобильного приложения, очень довольны результатами! Сразу увидели, что команда разработчиков очень профессиональная, все сделали быстро и сами предложили правильные решения в тех местах, которые мы не учли в ТЗ. Продолжаем сотрудничать и дальше.<span class="forapp-end-quote">»</span></div>
+                    <table>
+                        <tr>
+                            <td><img src="wp-content/uploads/2017/11/fedoseev.jpg" width="58px"/></td>
+                            <td class="forapp-feedback-name">Юрий Федосеев <br/>Генеральный директор</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="questions">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h6>Есть вопросы?</h6>
+                <p>Менеджеры FORapp свяжутся с вами по телефону или email в рабочее время с понедельника по пятницу</p>
+                <button type="button" data-toggle="modal" data-target="#try-it-modal" class="btn btn-primary">Попробовать</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center-sm text-center-xs">
+                <p class="company">
+                    <span>© 2015 ООО «Мобильные информационные системы»</span><br>
+                    <a href="/files/agreement.pdf"> Публичная&nbsp;оферта</a><br>
+                    <a href="/privacy_policy.html" target="_blank">Политика&nbsp;конфиденциальности</a><br>
+                    <a href="/terms_of_use.html" target="_blank">Пользовательское&nbsp;соглашение</a>
+                </p>
+            </div>
+            <div class="col-md-4 text-right text-center-xs text-center-sm text-center-xs">
+                <p><a href="https://www.google.com/maps/place/55%C2%B046'34.7%22N+37%C2%B032'31.5%22E/@55.7763039,37.5245737,14z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">123007, Россия, Москва, Хорошевское шоссе, 32А</a>
+                </p>
+            </div>
+            <div class="col-md-2 text-right text-center-xs text-center-sm text-center-xs">
+                <p><a href="tel:+74956986397">+7 495 698 63 97</a></p>
+            </div>
+            <div class="col-md-2 text-right text-center-xs text-center-sm text-center-xs">
+                <p><a href="mailto:hello@forapp.com">hello@forapp.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="try-it-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Запросить демо и пробное использование</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div role="form" class="wpcf7" id="wpcf7-f107-o1" lang="ru-RU" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="107">
+                        <input type="hidden" name="_wpcf7_version" value="4.9">
+                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f107-o1">
+                        <input type="hidden" name="_wpcf7_container_post" value="0">
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <p>Пожалуйста, заполните эту анкету и наши специалисты свяжутся с вами, проведут демонстрацию технологии и предоставят доступ для бесплатного пробного использования: </p>
+                                    <p></p></div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="name">* Имя</label><br>
+                                    <span class="wpcf7-form-control-wrap clientname"><input type="text" name="clientname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="name" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="name-required" class="text-danger" style="display: none;">Необходимо заполнить имя.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="surname">* Фамилия</label><br>
+                                    <span class="wpcf7-form-control-wrap surname"><input type="text" name="surname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="surname" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="surname-required" class="text-danger" style="display: none;">Необходимо заполнить фамилию.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="email">* Рабочий Email</label><br>
+                                    <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="email" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="email-required" class="text-danger" style="display: none;">Необходимо заполнить email.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="phone">* Контактный телефон</label><br>
+                                    <span class="wpcf7-form-control-wrap phone"><input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="phone" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="phone-required" class="text-danger" style="display: none;">Необходимо заполнить номер телефона.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="position">* Должность</label><br>
+                                    <span class="wpcf7-form-control-wrap position"><input type="text" name="position" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="position" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="position-required" class="text-danger" style="display: none;">Необходимо заполнить должность.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="company">* Компания</label><br>
+                                    <span class="wpcf7-form-control-wrap company"><input type="text" name="company" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="company" aria-required="true" aria-invalid="false"></span><br>
+                                    <span id="company-required" class="text-danger" style="display: none;">Необходимо заполнить компанию.</span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label for="comment">Пожалуйста, опишите ваш бизнес-процесс, который вы хотели бы автоматизировать или лучше контролировать с помощью технологии FORapp?</label><br>
+                                    <span class="wpcf7-form-control-wrap comment"><textarea name="comment" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea form-control" id="commnet" aria-invalid="false"></textarea></span>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <label><br>
+                                        <input class="agreement" type="checkbox"> Нажимая на кнопку Отправить, я даю согласие на <a href="/privacy_policy.html" target="_blank">обработку персональных данных</a><br>
+                                    </label>
+                                </div>
+                                <p></p></div>
+                            <p></p></div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit btn btn-primary"><span class="ajax-loader"></span>
+                    </div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>            <div id="done-block" style="display: none;">
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <p class="text-center">Спасибо, ваш запрос отправлен, мы скоро свяжемся с вами!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="done" type="button" class="btn btn-primary">Закрыть</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</body>

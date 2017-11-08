@@ -1,0 +1,82 @@
+#all-feedbacks {
+  background-color: #fff;
+  padding-bottom: 60px;
+
+  h1 {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: 100;
+  }
+
+  h2 {
+    margin-top: 56px;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  p {
+    font-size: 14px;
+
+    &.one-feature {
+      margin-bottom: 20px;
+    }
+  }
+
+  .forapp-feedback {
+    background: #2f6de0;
+    color: #fff;
+    font-size: 13px;
+    padding: 30px 40px;
+    position: relative;
+    margin-bottom: 20px;
+
+    span {
+      &.forapp-start-quote {
+        font-size: 25px;
+        font-weight: 100;
+        left: 20px;
+        position: absolute;
+        opacity: .4;
+        color: #fff;
+        top: 19px;
+      }
+
+      &.forapp-end-quote {
+        font-size: 25px;
+        font-weight: 100;
+        bottom: 0;
+        margin-left: 6px;
+        position: absolute;
+        opacity: .4;
+        color: #fff;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .feature-with-feedback {
+    margin-bottom: 80px;
+
+    table {
+      .forapp-feedback-name {
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: 600;
+
+        &.no-padding {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+}
